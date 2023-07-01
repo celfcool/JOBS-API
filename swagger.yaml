@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  title: Jobs API
+  title: JOBS DOC
   contact: {}
   version: "1.0"
 servers:
@@ -21,8 +21,8 @@ paths:
             schema:
               $ref: "#/components/schemas/RegisterUserRequest"
             example:
-              name: bob
-              email: bob@gmail.com
+              name: david
+              email: david@gmail.com
               password: secret
         required: true
       responses:
@@ -45,7 +45,7 @@ paths:
             schema:
               $ref: "#/components/schemas/LoginUserRequest"
             example:
-              email: susan@gmail.com
+              email: david@gmail.com
               password: secret
         required: true
       responses:
@@ -68,7 +68,7 @@ paths:
             schema:
               $ref: "#/components/schemas/CreateJobRequest"
             example:
-              company: google
+              company: telecom
               position: front-end developer
         required: true
       responses:
@@ -156,8 +156,8 @@ components:
         password:
           type: string
       example:
-        name: bob
-        email: bob@gmail.com
+        name: david
+        email: david@gmail.com
         password: secret
     LoginUserRequest:
       title: LoginUserRequest
@@ -171,7 +171,7 @@ components:
         password:
           type: string
       example:
-        email: susan@gmail.com
+        email: david@gmail.com
         password: secret
     CreateJobRequest:
       title: CreateJobRequest
